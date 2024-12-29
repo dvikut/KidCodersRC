@@ -30,14 +30,14 @@ What is important:
 - Common every grounding
 
 - To wire your L298N with the raspi will require more attention. Check the images and documents for L298N.
-  There are three blue terminals. One with three connections and two with two connections. 
-  The one with 3 connectors: 
-	The middle is the negative for the battery, the usb and the raspberry GPIO negative.
-	The positive for the usb and the battery (from the switch) is the connector closer to the other blue terminal.
-  The one which is closer to the 3 connectored terminal is the steering (motor A)
-  The other is the drive (motor B)
-  My terminal for motor B was wrong, that is why you see it is connected on the top.
-  To figure out which one drives the motor in one way or an other is just luck. (The brighter color should be the positive and connected closer to the cooler, but who knows how the car factory planned it.) You may swap the cables later or modify the directions in the code.
+  There are three blue terminals. One with three connections and two with two connections.<br>
+  The one with 3 connectors:<br>
+	The middle is the negative for the battery, the usb and the raspberry GPIO negative.<br>
+	The positive for the usb and the battery (from the switch) is the connector closer to the other blue terminal.<br>
+  The one which is closer to the 3 connectored terminal is the steering (motor A)<br>
+  The other is the drive (motor B)<br>
+  My terminal for motor B was wrong, that is why you see it is connected on the top.<br>
+  To figure out which one drives the motor in one way or an other is just luck. (The brighter color should be the positive and connected closer to the cooler, but who knows how the car factory planned it.) You may swap the cables later or modify the directions in the code.<br>
   For the control cables check the images and match the colors.
   
   
@@ -78,14 +78,14 @@ If you don't use Mistral or any LLM, just simply add:
 ```
 
 ## Ollama setup (optional)
-If you wish to use LLM locally on your own computer, download ollama. Then in the terminal run "ollama run [model]" e.g. 'llama3.2'. and it will download it. Later it will run as a service so you don't have to do anything. Please be aware that Ollama needs the OLLAMA_HOST environment variable to set to 0.0.0.0 on your computer to be able to receive requests from outside your computer. Also check the firewall if you have troubles.
+If you wish to use LLM locally on your own computer, download ollama. Then in the terminal run "ollama run [model]" e.g. 'llama3.2'. and it will download it. Later it will run as a service so you don't have to do anything. Please be aware that Ollama needs the OLLAMA_HOST environment variable to set to 0.0.0.0 on your computer to be able to receive requests from outside your computer. Also check the firewall if you have trouble.
 
 ## Setup your kid's computer
 If you do python and want to teach your kid:
 
-copy the for_your_kid/EN directory on your kid's computer (or /HU )
-set the ip of the car (the *.ip file)
-open toy_car.py and your kid is ready to use it
+- copy the for_your_kid/EN directory on your kid's computer (or /HU )
+- set the ip of the car (the *.ip file)
+- open toy_car.py and your kid is ready to use it
 
 
 Enjoy!
