@@ -9,6 +9,8 @@ This project provides a web interface and a web API (on WLAN) to control a remot
 - Send textual commands to the car using an input box.
 - Integration with Mistral AI or Ollama locally for LLM-driven commands.
 
+[![YouTube video](https://img.youtube.com/vi/reW0mn_GdWY/0.jpg)](https://www.youtube.com/watch?v=reW0mn_GdWY)
+
 ## The used hardware
 
 - A cheap radio-controlled electric car with steering and drive motor.
@@ -42,25 +44,45 @@ What is important:
 Steps on your raspi:
 If you didn't copy the repo to your home dir, copy it with WinSCP then use Putty for the following part (tha address is the fix IP you gave on the router, the user and pass is your user/pass for the raspi). If you use linux, you know what to do.
 If you wish to use Mistral AI first add your environment variable with your Mistral API key:
+'''
 sudo nano /etc/environment
+'''
+
 add:
+
+'''
 MISTRAL_API_KEY=****************************
+'''
 
 Then make the code start automatically, when you switch on the car:
+'''
 sudo crontab -e
+'''
+
 add:
+
+'''
 @reboot MISTRAL_API_KEY=$MISTRAL_API_KEY python3 /home/[YOUR_USER]/car.py
+'''
 
 If you don't use Mistral, just simply add:
+'''
 @reboot python3 /home/[YOUR_USER]/car.py
+'''
 
-If you wish to use LLM locally on your own computer, download ollama. Then in the terminal run "ollama run [model]" e.g. 'llama3.2'. and it will download it. Later it will run as a service so you don't have to do anything. Please be aware that Ollama needs the OLLAMA_PORT environment variable to set to 0.0.0.0 on your computer to be able to receive requests from outside your computer. Also check the firewall is you have troubles. If it doesn't help ChatGPT is your friend.
+
+If you wish to use LLM locally on your own computer, download ollama. Then in the terminal run "ollama run [model]" e.g. 'llama3.2'. and it will download it. Later it will run as a service so you don't have to do anything. Please be aware that Ollama needs the OLLAMA_PORT environment variable to set to 0.0.0.0 on your computer to be able to receive requests from outside your computer. Also check the firewall if you have troubles.
 
 If you don't need any fancy LLM thing just simply do the bootup setting on your raspi (or you will need to SSH to your raspi every time you turn it on)
+'''
 sudo crontab -e
-add:
-@reboot python3 /home/[YOUR_USER]/car.py
+'''
 
+add:
+
+'''
+@reboot python3 /home/[YOUR_USER]/car.py
+'''
 
 The car is ready for use. 
 
