@@ -40,6 +40,13 @@ What is important:
   To figure out which one drives the motor in one way or an other is just luck. (The brighter color should be the positive and connected closer to the cooler, but who knows how the car factory planned it.) You may swap the cables later or modify the directions in the code.
   For the control cables check the images and match the colors.
   
+  
+![L298N](images/L298N.jpeg.jpg)
+
+
+![Raspberry GPIO](images/raspberry_gpio.jpg)
+
+
 ## The nerd part
 Steps on your raspi:
 If you didn't copy the repo to your home dir, copy it with WinSCP then use Putty for the following part (tha address is the fix IP you gave on the router, the user and pass is your user/pass for the raspi). If you use linux, you know what to do.
