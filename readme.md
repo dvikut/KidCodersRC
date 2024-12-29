@@ -9,8 +9,8 @@ This project provides a web interface and a web API (on WLAN) to control a remot
 - Send textual commands to the car using an input box.
 - Integration with Mistral AI or Ollama locally for LLM-driven commands.
 
-[![YouTube video](https://img.youtube.com/vi/reW0mn_GdWY/0.jpg)](https://www.youtube.com/watch?v=reW0mn_GdWY)
-[Watch video](https://img.youtube.com/vi/reW0mn_GdWY/0.jpg)](https://www.youtube.com/watch?v=reW0mn_GdWY)
+[![YouTube video](https://img.youtube.com/vi/reW0mn_GdWY/0.jpg)](https://www.youtube.com/watch?v=reW0mn_GdWY)<br>
+https://www.youtube.com/watch?v=reW0mn_GdWY
 
 ## The used hardware
 
