@@ -49,7 +49,7 @@ What is important:
 
 ## Raspberry setup
 Steps on your raspi:
-If you didn't copy the repo to your home dir, copy it with WinSCP then use Putty for the following part (tha address is the fix IP you gave on the router, the user and pass is your user/pass for the raspi). If you use linux, you know what to do.
+If you didn't copy the repo to your home dir, copy it with WinSCP then use Putty for the following part (the address is the static IP you gave on the router, the user and pass is your user/pass for the raspi). If you use linux, you know what to do.
 If you wish to use Mistral AI first add your environment variable with your Mistral API key:
 ```
 sudo nano /etc/environment
