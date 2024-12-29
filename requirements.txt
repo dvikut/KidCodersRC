@@ -1,0 +1,4 @@
+Flask==1.1.2
+RPi.GPIO==0.7.0
+requests==2.25.1
+mistralai==1.2.5
