@@ -78,7 +78,7 @@ If you don't use Mistral or any LLM, just simply add:
 ```
 
 ## Ollama setup (optional)
-If you wish to use LLM locally on your own computer, download ollama. Then in the terminal run "ollama run [model]" e.g. 'llama3.2'. and it will download it. Later it will run as a service so you don't have to do anything. Please be aware that Ollama needs the OLLAMA_HOST environment variable to set to 0.0.0.0 on your computer to be able to receive requests from outside your computer. Also check the firewall if you have trouble.
+If you wish to use LLM locally on your own computer, download ollama. Then in the terminal run ```ollama run [model]``` e.g. 'llama3.2'. and it will download it. Later it will run as a service so you don't have to do anything. Please be aware that Ollama needs the OLLAMA_HOST environment variable to set to 0.0.0.0 on your computer to be able to receive requests from outside your computer. Also check the firewall if you have trouble.
 
 ## Setup your kid's computer
 If you do python and want to teach your kid:
