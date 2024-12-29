@@ -41,10 +41,10 @@ What is important:
   For the control cables check the images and match the colors.
   
   
-![L298N](images/L298N.jpeg.jpg)
+![L298N](images/L298N.jpeg)
 
 
-![Raspberry GPIO](images/raspberry_gpio.jpg)
+![Raspberry GPIO](images/raspberry_gpio.jpeg)
 
 
 ## The nerd part
